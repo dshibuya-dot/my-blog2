@@ -232,6 +232,65 @@ footer {
   letter-spacing: 0.05em;
 }
 
+/* ─── カテゴリーナビ ─── */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.cat-link {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  letter-spacing: 0.06em;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.cat-link:hover,
+.cat-link.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ─── カテゴリーページ ─── */
+.category-hero {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.category-hero-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.18em;
+  margin-bottom: 10px;
+}
+
+.category-hero h1 {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.category-hero-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+a.category {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* ─── 記事詳細ページ ─── */
 .post-container {
   background: var(--surface);
